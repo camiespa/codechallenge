@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <div>
+        <h1>Formulario de registro</h1>
+        <form id="formularioRegistro">
+            <label class="form-label">Nombre:</label>
+            <input type="text" placeholder="Ingrese nombre" class="form-control" id="nombreUsuario" required><br>
+            <label class="form-label">Apellido:</label>
+            <input type="text" placeholder="Ingrese apellido" class="form-control" id="apellidoUsuario" required><br>
+            <label class="form-label">Fecha de nacimiento:</label>
+            <input type="date" class="form-control" id="fechaUsuario" required><br><br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div><br>
+    <div id="infoEnviada"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
