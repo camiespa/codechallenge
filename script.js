@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("formularioRegistro");
     const info = document.getElementById("infoEnviada");
 
@@ -23,11 +22,5 @@ document.addEventListener("DOMContentLoaded", function () {
             body: JSON.stringify(usuario),
         })
             .then((response) => response.json())
-            .then((data) => {
-                info.innerHTML = "Registro exitoso: " + JSON.stringify(data, null, 2);
-            })
-            .catch((error) => {
-                info.innerHTML = "No se pudo registrar";
-            })
-    });
-});
+            .then(data => console.log(data));
+        });
